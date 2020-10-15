@@ -11,8 +11,8 @@
             grid-template-areas:
                 "header header header" 
                 "header header header"
-                "section1 section1 aside"
-                "section2 section2 section2"
+                "main main aside"
+                "section section section"
                 "footer footer footer";
         }
 
@@ -21,15 +21,15 @@
             background-color:#c20044;
         }
 
-        section1{
-            grid-area:section1;
+        main{
+            grid-area:main;
             display:flex;
             justify-content: flex-start;
             border-bottom:1px solid #bbbbbb;
         }
 
-        section2{
-            grid-area:section2;
+        section{
+            grid-area:section;
             display:flex;
             justify-content: space-around;
             align-items: center;
@@ -121,29 +121,34 @@
             color:#ffebf2;
         }
         
-        .section1-content1, .section1-content2{
-            margin-bottom:20px;
+        .main-content1, .main-content2{
             width:25%;
+            height:67%;
             align-self:flex-end;
+            flex-shrink: 1;
+            overflow:auto;
         }
 
-        .section1-photo1, .section1-photo2{
+        .main-photo1, .main-photo2{
             align-self:flex-end;
             margin:0 15px 20px 30px;
         }
 
-        .section1-photo2{
-            margin-left:40px;
+        .main-photo1 h2{
+            height:45px;
         }
 
-        .section2-content1, .section2-content2{
+        .section-content1, .section-content2{
             margin-bottom:10px;
             width:45%;
         }
 
         .aside-content{
             width:85%;
-            margin-bottom:20px;
+            height:95%;
+            flex-shrink: 2;
+            overflow:scroll;
+            overflow:auto;
         }
 
         .aside-content h2{
@@ -169,37 +174,37 @@
                 <p>Lorem ipsum dolor sit amet consectetur. Aut quia repudiandae ea ducimus eum illo rerum cum exercitationem!</p>
             </div>
         </header>
-        <section1>
-            <div class="section1-photo1">
+        <main>
+            <div class="main-photo1">
                 <h2>Photo</h2>
                 <img src="./images/puppy01.jpg" alt="puppy image" height="200" width="230">
             </div>
-            <div class="section1-content1">
+            <div class="main-content1">
                 <p>Lorem ipsum dolor sit ameter consectetur. Provident orange le water dit velit voluptas ipsamsei autem, ut esse, repefy exllendus recusandae est excepturi quodef unde perspiciatis tempora eiusef quidem eveniet, quas asperiores maxime. Deleniti nulla velitefdef veniam.</p>  
             </div>
-            <div class="section1-photo2">
+            <div class="main-photo2">
                <img src="./images/puppy02.jpg" alt="puppy image" height="200">
             </div>
-            <div class="section1-content2">
+            <div class="main-content2">
                <p>Lorem ipsum dolor sit. Puos degh de dken lfneskl repellat dsaf cel ex numquam iusto ipsa odit velit voluptas ipsam autem, ut esse, repellendus recusandae est excepturi quod unde perspiciatis tempora eius quidem eveniet, quas asperiores maxime. Deleniti nulla velit veniam.</p>  
             </div>
-        </section1>
+        </main>
         <aside>
             <div class="aside-content">
                 <h2>Schedule</h2>
                 <p>Lorem ipsum dolor. Magnam fugit blanditiis recusandae. Ecita ipsa optio vel mollitia doepe, earum conseqtur commodi animi adipisci voatibus ror sapiente corporis excepturi inventore veniam quod, facilis placeat dolorum, nisi fugit quae. Quasi doloremque laudantium quod asperiores omnis unde cupiditate quos, officia repudiandae. Vitae officiis ea earum expedita sint illo iure itaque minus veniare. Quas ratione debitis inci lores magam quisqam sa quae natus velit fugit.</p>  
             </div>
         </aside>
-        <section2>
-            <div class="section2-content1">
+        <section>
+            <div class="section-content1">
                 <h2>Daily Log1</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dicta error velit facere fugit qui repudiandae! Nesciunt quos architecto facere, minus eos omnis, error esse cumque deleniti ipsam harum sapiente velit laudantium blanditiis recusandae. Exercitationem ipsa optio vel mollitia dolore saepe, earum consequatur commodi animi adipisci voluptatibus error sapiente corporis excepturi inventore veniam quod, facilis placeat dolorum, nisi fugit quae. Quasi doloremque laudantium quod asperiores omnis unde cupiditate quos, officia repudiandae. Vitae officiis ea earum expedita sint illo iure itaque minus veniam inventore. Quas ratione debitis incidunt sint, reprehenderit ex veniam rerum dolores magnam quisquam ipsa quae natus velit fugit.</p>  
             </div>
-            <div class="section2-content2">
+            <div class="section-content2">
                 <h2>Daily Log2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ullam ea atque impedit cupiditate neque nulla ex, ab et error ratione exercitationem similique mollitia architecto quidem sit sint delectus praesentium odit quibusdam. Autem qui quae dolor aperiam, blanditiis perferendis et pariatur? Labore dignissimos nemo ex voluptatem fugit veniam numquam cumque illum corporis, optio ratione minus sed sint atque maiores fugiat a tenetur perspiciatis eveniet tempora dolore! Sit officia ipsum iusto tempore, sint deleniti enim exercitationem voluptates magni numquam laudantium iste laboriosam, cupiditate, quibusdam quo dolorem accusamus voluptatum atque beatae. Dicta fugit dolorem aliquam delectus iusto aperiam necessitatibus amet!</p>  
             </div>
-        </section2>
+        </section>
         <footer>
             <div>
                 <p>Copyright &copy;2020. All Right Reserved.</p>
