@@ -12,7 +12,7 @@
 ## 2. 주요 코드 설명
 ---
 ### Grid 사용하여 홈페이지의 전체적인 구조 설정
-   ```c
+   ```html
    <style>
       .container{
          display: grid;
@@ -35,7 +35,7 @@
 
  ### body의 전체적 구조와 Grid 영역 지정
 
-   ```c   
+   ```html
    <body>
       <div class="container">
          <header>Header</header>
@@ -47,7 +47,7 @@
    </body>
    ```   
    
-   ```c
+   ```css
    <style>
       header{grid-area:header;}
       main{grid-area:main;}
@@ -62,7 +62,7 @@
 
 
  ### header 요소 구조
-   ```c
+   ```html
    <header>
       <nav class="navbar">
          <ul class="navbar-menu">
@@ -78,14 +78,14 @@
    - 메뉴는 head 부분에서 Flex박스를 이용하여 만들었다.
 
 ### main, aside, section 요소 구조
-   ```c
+   ```css
    main{display:flex;}
 
    section{display:flex;}
        
    aside{display:flex;}
    ```
-   ```c
+   ```html
    <main>
       <div><img src="" height="200"></div>
       <div><p>Lorem</p></div>
@@ -104,7 +104,7 @@
    
 ### footer 요소 구조
 
-```c
+```html
 <footer>
    <div><p>Copyright &copy;2020. All Right Reserved.</p></div>  
 </footer>
